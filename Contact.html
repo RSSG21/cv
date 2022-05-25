@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <h1>My contact details</h1>
+    <p>My fiction address</p>
+    <p>07463944399</p>
+    <p>rocioserranogomez21@hotmail.es</p>
+<!--el atributo action hace referencia a la URL a la que se va a mandar cuando opima el boton submit, en este caso nos mandara a mi email ya que he puesto directamente mi gmail
+El method significa el método como lo va a mandar, en este caso post
+con enctype decimo que nuestros datos en nuestro form esta encoding en plain text-->
+    <form action="mailto:rocioserranogomez21@gmail.com" method="post" enctype="text/plain">
+<!-- Label -->
+      <label for="">Your Name:</label>
+      <!--Dentro de input necesitamos decirle que tipo de input es, para que este se comporte como tal, es decir si se dice que el tipo es de mail como mimimo tendras que poner un @ dentro de ese mail
+      de lo contrario no va a aceptar que submit el form, tambien es necesario darle en name dentro de esos inputs para que se sepa como clasificar esos datos, es decir si el Name es your Name, asi lo clasificara -->
+      <input type="text" name="yourName" value=""> <br>
+      <label>Your email:</label>
+      <input type="email" name="yourEmail" id=""> <br>
+      <label>Your Message</label> <br>
+      <textarea name="yourMessage" rows="8" cols="80"></textarea> <br>
+      <input type="submit" name="submit">
+    </form>
+  </body>
+</html>
